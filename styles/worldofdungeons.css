@@ -1,0 +1,37 @@
+/* WoDu Sheet changes */
+
+div.pbta.sheet.actor section.window-content {
+  background-color: #EEE6D2;
+  color: #0b6584;
+}
+
+.pbta.sheet .sheet-attributes .cell--stats .stat, .pbta.sheet .tabs .item {
+  background: #0D7193;
+  border-color: #0b6584;
+}
+
+:is(.pbta.sheet .sheet-attributes .cell--stats .stat, .pbta.sheet .tabs .item):hover {
+  background: #3d8da8;
+  color: white;
+}
+
+.pbta.sheet :is(.cell__title, .tabs, input)  {
+  color: #0b6584;
+  border-color: #0b6584;
+}
+
+.pbta.sheet .tabs .item:hover, .pbta.sheet .tabs .item:focus {
+  border-color: white;
+  border-bottom-color: #0b6584;
+}
+
+.pbta.sheet .tabs .item.active {
+  background: white;
+  color: #0b6584;
+  border-bottom: 2px solid #0b6584;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #0b6584;
+  border: 1px solid #257f9d;
+}

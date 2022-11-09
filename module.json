@@ -1,0 +1,47 @@
+{
+  "id": "worldofdungeons",
+  "name": "worldofdungeons",
+  "title": "World of Dungeons",
+  "description": "A custom sheet for World of Dungeons, to be used with the Powered by the Apocalypse system",
+  "authors": [
+      {
+          "name": "gonzaPaEst"
+      }
+  ],
+  "version": "1",
+  "minimumCoreVersion": "10",
+  "compatibility": {
+      "minimum": "10",
+      "verified": "10.288"
+  },
+  "relationships": {
+      "systems": [
+          {
+              "id": "pbta",
+              "type": "system",
+              "manifest": "https://asacolips-artifacts.s3.amazonaws.com/pbta/0.6.0/system.json",
+              "compatibility": {
+                  "verified": "0.6.0"
+              }
+          }
+      ]
+  },
+  "esmodules": [
+      "./modules/worldofdungeons.mjs"
+  ],
+  "scripts": [],
+  "socket": true,
+  "styles": [
+      "./styles/worldofdungeons.css"
+  ],
+  "languages": [
+      {
+          "lang": "en",
+          "name": "English",
+          "path": "languages/en.json"
+      }
+  ],
+  "url": "",
+  "manifest": "",
+  "download": ""
+}
