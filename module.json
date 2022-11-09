@@ -27,7 +27,7 @@
       ]
   },
   "esmodules": [
-      "./modules/worldofdungeons.mjs"
+      "./modules/worldofdungeons.js"
   ],
   "scripts": [],
   "socket": true,
