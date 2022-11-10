@@ -1,6 +1,7 @@
 {
     "PBTA": {
-        "Moves": "Abilities",
-        "Playbook": "Class"
+        "Description": "Notes",
+        "Biography": "Notes",
+        "Equipment": "Gear"
     }
 }

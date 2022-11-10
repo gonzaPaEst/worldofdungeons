@@ -1,5 +1,10 @@
 /* WoDu Sheet changes */
 
+@font-face {
+  font-family: "DnD";
+  src: url("./fonts/DnDC.ttf") format("truetype");
+}
+
 div.pbta.sheet.actor section.window-content {
   background-color: #EEE6D2;
   color: #0b6584;
@@ -34,4 +39,41 @@ div.pbta.sheet.actor section.window-content {
 ::-webkit-scrollbar-thumb {
   background: #0b6584;
   border: 1px solid #257f9d;
+}
+
+
+
+.pbta.sheet :is(.cell--attributes-top .cell__title) {
+  font: 2.1rem 'DnD';
+  justify-content: center;
+  padding: 5px 0;
+}
+
+.pbta.sheet .cell--attributes-left .cell__title {
+  font: 1.9rem 'DnD';
+}
+
+.pbta.sheet .sheet-attributes .cell--stats .stat .cell__title  {
+  font: 2.4rem 'DnD';
+  height: 30px;
+  padding-bottom: 5px;
+}
+
+.pbta.sheet .sheet-attributes .cell--stats .stats-list {
+  margin: 8px 0 0;
+}
+
+.pbta.sheet .tabs a.item {
+  align-self: center;
+  font: 2.1rem 'DnD';
+  height: 45px;
+  margin: 0 10px 6px;
+  padding: 0 0 1px;
+}
+
+.pbta.sheet.npc .tabs a.item {
+  align-self: center;
+  font: 2rem 'DnD';
+  height: 40px;
+  margin: 0 10px 1px;
 }
