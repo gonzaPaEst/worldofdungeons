@@ -164,3 +164,7 @@ span.attr-icon.attr-rollable.rollable:hover .fa-dice-d6 {
 span.stat-icon.stat-rollable.rollable:hover .fa-dice-d6 {
   animation: rollDice 3s linear infinite;
 }
+
+button:is(#pbta-settings-btn, button#pbta-help-btn), .form-group.submenu:first-of-type {
+  display: none;
+}

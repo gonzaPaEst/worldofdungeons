@@ -26,10 +26,9 @@
           }
       ]
   },
-  "esmodules": [
-      "./modules/worldofdungeons.mjs"
+  "scripts": [
+    "./modules/worldofdungeons.js"
   ],
-  "scripts": [],
   "socket": true,
   "styles": [
       "./styles/worldofdungeons.css"
