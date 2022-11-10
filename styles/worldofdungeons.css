@@ -13,6 +13,7 @@ div.pbta.sheet.actor section.window-content {
 .pbta.sheet .sheet-attributes .cell--stats .stat, .pbta.sheet .tabs .item {
   background: #0D7193;
   border-color: #0b6584;
+  text-shadow: 0 0 5px #063c4f;
 }
 
 :is(.pbta.sheet .sheet-attributes .cell--stats .stat, .pbta.sheet .tabs .item):hover {
@@ -40,8 +41,6 @@ div.pbta.sheet.actor section.window-content {
   background: #0b6584;
   border: 1px solid #257f9d;
 }
-
-
 
 .pbta.sheet :is(.cell--attributes-top .cell__title) {
   font: 2.1rem 'DnD';
@@ -76,4 +75,92 @@ div.pbta.sheet.actor section.window-content {
   font: 2rem 'DnD';
   height: 40px;
   margin: 0 10px 1px;
+}
+
+@keyframes swing
+{
+    15%
+    {
+        transform: translateX(3px);
+    }
+    30%
+    {
+        transform: translateX(-3px);
+    }
+    50%
+    {
+        transform: translateX(1.5px);
+    }
+    65%
+    {
+        transform: translateX(-1.5px);
+    }
+    80%
+    {
+        transform: translateX(1px);
+    }
+    100%
+    {
+        transform: translateX(0);
+    }
+}
+
+span.attr-icon.attr-rollable.rollable:hover .fa-dice-d6 {
+  animation: swing 1s ease infinite alternate;
+}
+
+
+@keyframes rollDice {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  4% {
+    transform: translate(0, -6px);
+  }
+  8% {
+    transform: translate(3px, -6px);
+  }
+  12% {
+    transform: translate(-3px, -6px);
+  }
+  16% {
+    transform: translate(3px, -6px);
+  }
+  20% {
+    transform: translate(-3px, -6px);
+  }
+  24% {
+    transform: translate(3px, -6px);
+  }
+  28% {
+    transform: translate(-3px, -6px);
+  }
+  32% {
+    transform: translate(3px, -6px);
+  }
+  33% {
+    transform: translate(-18px, 8px);
+  }
+  35% {
+    transform: translate(-12px, 10px);
+  }
+  37% {
+    transform: translate(-18px, 6px);
+  }
+  39% {
+    transform: translate(-16px, 10px);
+  }
+  60% {
+    transform: translate(-16px, 10px);
+  }
+  80% {
+    transform: translate(0px, 0px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+  }
+}
+
+span.stat-icon.stat-rollable.rollable:hover .fa-dice-d6 {
+  animation: rollDice 3s linear infinite;
 }
