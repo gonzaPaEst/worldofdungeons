@@ -13,10 +13,21 @@ div.pbta.sheet.actor section.window-content {
 .pbta.sheet .sheet-attributes .cell--stats .stat, .pbta.sheet .tabs .item {
   background: #0D7193;
   border-color: #0b6584;
+}
+
+.pbta.sheet .sheet-attributes .cell--stats .stat :is(.cell__title, .stat-icon), .pbta.sheet .tabs .item {
   text-shadow: 0 0 5px #063c4f;
 }
 
-:is(.pbta.sheet .sheet-attributes .cell--stats .stat, .pbta.sheet .tabs .item):hover {
+.pbta.sheet .sheet-attributes .cell--stats .stat:hover :is(.cell__title, .stat-icon) {
+  text-shadow: 0 0 5px #04303f;
+}
+
+.pbta.sheet .tabs .item:hover {
+  text-shadow: 0 0 5px #04303f;
+}
+
+.pbta.sheet :is(.sheet-attributes .cell--stats .stat, .tabs .item, .cell__title button):hover {
   background: #3d8da8;
   color: white;
 }
@@ -26,9 +37,13 @@ div.pbta.sheet.actor section.window-content {
   border-color: #0b6584;
 }
 
-.pbta.sheet .tabs .item:hover, .pbta.sheet .tabs .item:focus {
+.pbta.sheet .tabs .item:is(:hover, :focus) {
   border-color: white;
   border-bottom-color: #0b6584;
+}
+
+.pbta.sheet .cell__title button:hover {
+  border-color: white;
 }
 
 .pbta.sheet .tabs .item.active {
@@ -167,4 +182,20 @@ span.stat-icon.stat-rollable.rollable:hover .fa-dice-d6 {
 
 button:is(#pbta-settings-btn, button#pbta-help-btn), .form-group.submenu:first-of-type {
   display: none;
+}
+
+.pbta.sheet .cell--image {
+  background: rgb(0,0,0,.3);
+}
+
+.pbta.sheet :is(.cell--attributes-top, .cell--attributes-left) input:hover {
+  box-shadow: 0 0 5px #0D7193;
+}
+
+.pbta.sheet :is(.cell--attributes-top, .cell--attributes-left) input[type=text]:hover {
+  cursor: text;
+}
+
+.pbta.sheet :is(.cell--attributes-top, .cell--attributes-left) .cell__checkboxes label:hover {
+  cursor: pointer;
 }
