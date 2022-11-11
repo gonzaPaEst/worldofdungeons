@@ -1,4 +1,10 @@
 {
+    "WoDu": {
+        "Button": {
+            "Title": "Config WoDu Sheet Manually",
+            "Hint": "Click on this button if you want to configurarion the World of Dungeons sheet manually."
+        }
+    },
     "PBTA": {
         "Description": "Notes",
         "Biography": "Notes",

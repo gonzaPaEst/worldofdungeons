@@ -5,7 +5,7 @@
   src: url("./fonts/DnDC.ttf") format("truetype");
 }
 
-div.pbta.sheet.actor section.window-content {
+.pbta.sheet:is(.actor, .item) section.window-content {
   background-color: #EEE6D2;
   color: #0b6584;
 }
@@ -198,4 +198,18 @@ button:is(#pbta-settings-btn, button#pbta-help-btn), .form-group.submenu:first-o
 
 .pbta.sheet :is(.cell--attributes-top, .cell--attributes-left) .cell__checkboxes label:hover {
   cursor: pointer;
+}
+
+.pbta.sheet .cell__title button, .pbta.sheet .cell__subtitle button {
+  color: #0b6584;
+  border: 1px solid #0b6584;
+}
+
+.pbta.sheet .sheet-wrapper .editor-content {
+  background: rgb(0,0,0,.05);
+}
+
+.pbta.sheet .item-controls a.item-control:hover {
+  color: white;
+  text-shadow: 0 0 5px #04303f;
 }
