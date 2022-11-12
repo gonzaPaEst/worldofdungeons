@@ -12,24 +12,23 @@
   "minimumCoreVersion": "10",
   "compatibility": {
       "minimum": "10",
-      "verified": "10.288"
+      "verified": "10.290"
   },
   "relationships": {
       "systems": [
           {
               "id": "pbta",
               "type": "system",
-              "manifest": "https://asacolips-artifacts.s3.amazonaws.com/pbta/0.6.0/system.json",
+              "manifest": "https://asacolips-artifacts.s3.amazonaws.com/pbta/0.7.0/system.json",
               "compatibility": {
-                  "verified": "0.6.0"
+                  "verified": "0.7.0"
               }
           }
       ]
   },
-  "scripts": [
-    "./modules/worldofdungeons.js"
+  "esmodules": [
+    "./module/worldofdungeons.mjs"
   ],
-  "socket": true,
   "styles": [
       "./styles/worldofdungeons.css"
   ],

@@ -180,10 +180,6 @@ span.stat-icon.stat-rollable.rollable:hover .fa-dice-d6 {
   animation: rollDice 3s linear infinite;
 }
 
-button:is(#pbta-settings-btn, button#pbta-help-btn), .form-group.submenu:first-of-type {
-  display: none;
-}
-
 .pbta.sheet .cell--image {
   background: rgb(0,0,0,.3);
 }
@@ -212,4 +208,8 @@ button:is(#pbta-settings-btn, button#pbta-help-btn), .form-group.submenu:first-o
 .pbta.sheet .item-controls a.item-control:hover {
   color: white;
   text-shadow: 0 0 5px #04303f;
+}
+
+.pbta.sheet .cell--attr-nextlevel label.cell__title {
+  font-size: 1.8rem;
 }
