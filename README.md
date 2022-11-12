@@ -1,6 +1,6 @@
 # World of Dungeons
 
-A World of Dungeons custom sheet and compendium module for Foundry VTT, to be used with the Powered by the Apocalypse system.
+World of Dungeons custom sheet and compendium module for Foundry VTT, to be used with the Powered by the Apocalypse system.
 
 ---
 

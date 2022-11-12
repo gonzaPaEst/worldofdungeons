@@ -2,7 +2,7 @@
   "id": "worldofdungeons",
   "name": "worldofdungeons",
   "title": "World of Dungeons",
-  "description": "A Foundry VTT custom sheet for World of Dungeons, to be used with the Powered by the Apocalypse system.",
+  "description": "World of Dungeons custom sheet and compendium module, to be used with the Powered by the Apocalypse system",
   "authors": [
     {
         "name": "gonzaPaEst"
@@ -56,6 +56,6 @@
     }
   ],
   "url": "https://github.com/gonzaPaEst/worldofdungeons",
-  "manifest": "https://raw.githubusercontent.com/gonzaPaEst/worldofdungeons/v1/module.json",
-  "download": "https://github.com/gonzaPaEst/worldofdungeons/releases/download/v1/module.zip"
+  "manifest": "https://raw.githubusercontent.com/gonzaPaEst/worldofdungeons/beta1/module.json",
+  "download": "https://github.com/gonzaPaEst/worldofdungeons/releases/download/beta1/module.zip"
 }
