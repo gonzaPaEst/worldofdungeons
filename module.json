@@ -2,44 +2,60 @@
   "id": "worldofdungeons",
   "name": "worldofdungeons",
   "title": "World of Dungeons",
-  "description": "A custom sheet for World of Dungeons, to be used with the Powered by the Apocalypse system",
+  "description": "A Foundry VTT custom sheet for World of Dungeons, to be used with the Powered by the Apocalypse system.",
   "authors": [
-      {
-          "name": "gonzaPaEst"
-      }
+    {
+        "name": "gonzaPaEst"
+    }
   ],
   "version": "1",
   "minimumCoreVersion": "10",
   "compatibility": {
-      "minimum": "10",
-      "verified": "10.290"
+    "minimum": "10",
+    "verified": "10.290"
   },
   "relationships": {
-      "systems": [
-          {
-              "id": "pbta",
-              "type": "system",
-              "manifest": "https://asacolips-artifacts.s3.amazonaws.com/pbta/0.7.0/system.json",
-              "compatibility": {
-                  "verified": "0.7.0"
-              }
-          }
-      ]
+    "systems": [
+        {
+            "id": "pbta",
+            "type": "system",
+            "manifest": "https://asacolips-artifacts.s3.amazonaws.com/pbta/0.7.0/system.json",
+            "compatibility": {
+                "verified": "0.7.0"
+            }
+        }
+    ]
   },
   "esmodules": [
     "./module/worldofdungeons.mjs"
   ],
   "styles": [
-      "./styles/worldofdungeons.css"
+    "./styles/worldofdungeons.css"
   ],
   "languages": [
-      {
-          "lang": "en",
-          "name": "English",
-          "path": "languages/en.json"
-      }
+    {
+        "lang": "en",
+        "name": "English",
+        "path": "languages/en.json"
+    }
   ],
-  "url": "",
-  "manifest": "",
-  "download": ""
+  "packs": [
+    {
+        "name": "weapons",
+        "label": "Weapons",
+        "system": "pbta",
+        "path": "./packs/weapons.db",
+        "type": "Item"
+    },
+    {
+        "name": "equipment",
+        "label": "Equipment",
+        "system": "pbta",
+        "path": "./packs/equipment.db",
+        "type": "Item"
+    }
+  ],
+  "url": "https://github.com/gonzaPaEst/worldofdungeons",
+  "manifest": "https://raw.githubusercontent.com/gonzaPaEst/worldofdungeons/v1/module.json",
+  "download": "https://github.com/gonzaPaEst/worldofdungeons/releases/download/v1/module.zip"
 }

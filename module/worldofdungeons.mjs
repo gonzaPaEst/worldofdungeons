@@ -1,18 +1,36 @@
 import { configSheet } from "./helpers/config-sheet.mjs"
 
+// once the game has initialized, set up the module
+Hooks.once('init', () => {
+
+  // register WoDu settings
+  game.settings.register('worldofdungeons', 'settings-override', {
+    name: game.i18n.localize("WoDu.Settings.Title"),
+    default: false,
+    type: Boolean,
+    scope: 'world',
+    config: true,
+    hint: game.i18n.localize("WoDu.Settings.Hint"),
+    onChange: () => setTimeout(() => {
+        location.reload();
+      }, 500)
+  });
+
+})
 
 Hooks.once('pbtaSheetConfig', () => {
+  
   // Disable the sheet config form.
   game.settings.set('pbta', 'sheetConfigOverride', true);
-  // Replace the game.pbta.sheetConfig with your own version.
-
+  
+  // Replace the game.pbta.sheetConfig with WoDu version.
   configSheet();
 
 });
 
-
 Hooks.on("renderActorSheet", async (app, html, options) => {
 
+  // Automatically deselect other armor when one is checked
   $('.cell--attr-armorspeed').click(function(e) {
     const armor = $(e.currentTarget);
     const none = armor.find('input[name="system.attrLeft.armorspeed.options.0.value"]');

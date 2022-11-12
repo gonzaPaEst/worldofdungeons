@@ -1,4 +1,10 @@
 {
+    "WoDu": {
+        "Settings": {
+            "Title": "Override Setting Selections",
+            "Hint": "The World of Dungeons module automatically hides all PbtA sheet options (formula, forward, ongoing, roll mode, etc.). If you want to make your own selections, please check this option off."
+        }
+    },
     "PBTA": {
         "Description": "Notes",
         "Biography": "Notes",

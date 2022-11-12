@@ -1,5 +1,7 @@
 export const configSheet = async () => {
 
+  // pass WoDu sheet object to config
+
   game.pbta.sheetConfig = { 
     rollFormula: "2d6", 
     rollResults: { 
@@ -216,12 +218,16 @@ export const configSheet = async () => {
     } 
   }
   
-  // TODO add setting to counteract these settings
-  await game.settings.set('pbta', 'advForward', true);
-  await game.settings.set('pbta', 'hideRollFormula', true);
-  await game.settings.set('pbta', 'hideForward', true);
-  await game.settings.set('pbta', 'hideOngoing', true);
-  await game.settings.set('pbta', 'hideRollMode', true);
-  await game.settings.set('pbta', 'hideUses', true);
-    
+  // check if users wants to override settings; if not, hide all PbtA sheet options
+  let overrideSettings = await game.settings.get('worldofdungeons', 'settings-override');
+  
+  if (!overrideSettings) {
+    await game.settings.set('pbta', 'advForward', true);
+    await game.settings.set('pbta', 'hideRollFormula', true);
+    await game.settings.set('pbta', 'hideForward', true);
+    await game.settings.set('pbta', 'hideOngoing', true);
+    await game.settings.set('pbta', 'hideRollMode', true);
+    await game.settings.set('pbta', 'hideUses', true);
+  }
+  
 }
