@@ -53,9 +53,23 @@
         "system": "pbta",
         "path": "./packs/equipment.db",
         "type": "Item"
+    },
+    {
+        "name": "skills",
+        "label": "Skills",
+        "system": "pbta",
+        "path": "./packs/skills.db",
+        "type": "Item"
+    },
+    {
+        "name": "special-abilities",
+        "label": "Special Abilities",
+        "system": "pbta",
+        "path": "./packs/special-abilities.db",
+        "type": "Item"
     }
   ],
   "url": "https://github.com/gonzaPaEst/worldofdungeons",
-  "manifest": "https://raw.githubusercontent.com/gonzaPaEst/worldofdungeons/beta1/module.json",
-  "download": "https://github.com/gonzaPaEst/worldofdungeons/releases/download/beta1/module.zip"
+  "manifest": "https://raw.githubusercontent.com/gonzaPaEst/worldofdungeons/v1/module.json",
+  "download": "https://github.com/gonzaPaEst/worldofdungeons/releases/download/v1/module.zip"
 }

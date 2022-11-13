@@ -33,16 +33,16 @@ export const configSheet = async () => {
             label: "STR", 
             value: 0 
           }, 
-          int: { 
-            label: "INT", 
+          dex: { 
+            label: "DEX", 
             value: 0 
           }, 
           con: { 
             label: "CON", 
             value: 0 
           }, 
-          dex: { 
-            label: "DEX", 
+          int: { 
+            label: "INT", 
             value: 0 
           }, 
           wis: { 
