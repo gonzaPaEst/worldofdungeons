@@ -1,6 +1,6 @@
 export const configSheet = async () => {
 
-  // pass WoDu sheet object to config
+  // pass WoDu sheet object to sheeConfig
 
   game.pbta.sheetConfig = { 
     rollFormula: "2d6", 
