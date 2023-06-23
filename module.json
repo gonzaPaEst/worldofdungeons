@@ -8,11 +8,12 @@
         "name": "gonzaPaEst"
     }
   ],
-  "version": "1",
+  "version": "2",
   "minimumCoreVersion": "10",
+  "compatibleCoreVersion": "11",
   "compatibility": {
     "minimum": "10",
-    "verified": "10.290"
+    "verified": "11.302"
   },
   "relationships": {
     "systems": [
@@ -21,7 +22,7 @@
             "type": "system",
             "manifest": "https://asacolips-artifacts.s3.amazonaws.com/pbta/0.7.0/system.json",
             "compatibility": {
-                "verified": "0.7.0"
+                "verified": "0.7.2"
             }
         }
     ]
@@ -70,6 +71,6 @@
     }
   ],
   "url": "https://github.com/gonzaPaEst/worldofdungeons",
-  "manifest": "https://raw.githubusercontent.com/gonzaPaEst/worldofdungeons/v1/module.json",
-  "download": "https://github.com/gonzaPaEst/worldofdungeons/releases/download/v1/module.zip"
+  "manifest": "https://raw.githubusercontent.com/gonzaPaEst/worldofdungeons/v2/module.json",
+  "download": "https://github.com/gonzaPaEst/worldofdungeons/releases/download/v2/module.zip"
 }
