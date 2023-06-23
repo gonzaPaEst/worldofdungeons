@@ -2,6 +2,8 @@
 
 World of Dungeons custom sheet and compendium module for Foundry VTT, to be used with the [Powered by the Apocalypse](https://gitlab.com/asacolips-projects/foundry-mods/pbta) game system (by Asacolips).
 
+![alt text](https://raw.githubusercontent.com/gonzaPaEst/worldofdungeons/main/styles/img/WoDu-Sheet.webp "World of Dungeons sheet")
+
 ---
 
 ## Dependencies
